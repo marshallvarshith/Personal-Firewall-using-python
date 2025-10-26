@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Block Malicious IP Inbound",
+    "action": "BLOCK",
+    "direction": "IN",
+    "protocol": "ANY",
+    "src_ip": "192.168.1.101",
+    "dst_ip": "ANY",
+    "src_port": "ANY",
+    "dst_port": "ANY"
+  },
+  {
+    "name": "Block Outbound SSH",
+    "action": "BLOCK",
+    "direction": "OUT",
+    "protocol": "TCP",
+    "src_ip": "ANY",
+    "dst_ip": "ANY",
+    "src_port": "ANY",
+    "dst_port": 22
+  },
+  {
+    "name": "Allow Outbound DNS",
+    "action": "ALLOW",
+    "direction": "OUT",
+    "protocol": "UDP",
+    "src_ip": "ANY",
+    "dst_ip": "ANY",
+    "src_port": "ANY",
+    "dst_port": 53
+  },
+  {
+    "name": "Allow Outbound HTTP",
+    "action": "ALLOW",
+    "direction": "OUT",
+    "protocol": "TCP",
+    "src_ip": "ANY",
+    "dst_ip": "ANY",
+    "src_port": "ANY",
+    "dst_port": 80
+  },
+  {
+    "name": "Allow Outbound HTTPS",
+    "action": "ALLOW",
+    "direction": "OUT",
+    "protocol": "TCP",
+    "src_ip": "ANY",
+    "dst_ip": "ANY",
+    "src_port": "ANY",
+    "dst_port": 443
+  }
+]
+

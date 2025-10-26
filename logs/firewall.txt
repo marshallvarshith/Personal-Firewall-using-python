@@ -1,0 +1,137 @@
+2025-10-26 20:27:21 - INFO - Firewall starting up.
+2025-10-26 20:27:21 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:27:21 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - INFO - Setting up iptables chain: PY_FIREWALL_CLI
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -N PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -I INPUT 1 -j PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - INFO - Inserted jump rule to PY_FIREWALL_CLI in INPUT chain.
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -s 192.168.1.101 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -p tcp --dport 22 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:27:21 - INFO - Applied 0 BLOCK rules to iptables chain PY_FIREWALL_CLI.
+2025-10-26 20:27:21 - INFO - Engine started sniffing with 5 rules.
+2025-10-26 20:33:18 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:18 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:18 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:21 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:21 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:21 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:24 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:24 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:24 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:27 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:27 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:27 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:30 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:30 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:33:30 - WARNING - Rule Match ('Block Malicious IP Inbound') -> ACTION: BLOCK | DIR: IN | PROTO: ICMP | SRC: 192.168.1.101:ANY -> DST: 10.0.2.15:ANY (Action: BLOCK)
+2025-10-26 20:39:27 - INFO - Firewall shutdown sequence initiated.
+2025-10-26 20:39:27 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:39:27 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:39:27 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:39:27 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:39:48 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:39:48 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:39:48 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:39:48 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:39:48 - INFO - Firewall stopped and rules flushed manually via 'stop' command.
+2025-10-26 20:40:48 - INFO - Firewall starting up.
+2025-10-26 20:40:48 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:40:48 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:40:48 - INFO - Setting up iptables chain: PY_FIREWALL_CLI
+2025-10-26 20:40:48 - ERROR - iptables command failed: sudo iptables -N PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:40:48 - ERROR - iptables command failed: sudo iptables -I INPUT 1 -j PY_FIREWALL_CLI
+Error: sudo: iptables: command not found
+2025-10-26 20:40:48 - INFO - Inserted jump rule to PY_FIREWALL_CLI in INPUT chain.
+2025-10-26 20:40:48 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -s 192.168.1.101 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:40:48 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -p tcp -s 10.2.0.17 --dport 22 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:40:48 - INFO - Applied 0 BLOCK rules to iptables chain PY_FIREWALL_CLI.
+2025-10-26 20:40:48 - INFO - Engine started sniffing with 5 rules.
+2025-10-26 20:41:01 - INFO - Firewall shutdown sequence initiated.
+2025-10-26 20:41:01 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:41:01 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:42:10 - INFO - Firewall starting up.
+2025-10-26 20:42:10 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:42:10 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:42:10 - INFO - Setting up iptables chain: PY_FIREWALL_CLI
+2025-10-26 20:42:10 - INFO - Inserted jump rule to PY_FIREWALL_CLI in INPUT chain.
+2025-10-26 20:42:10 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -s 192.168.1.101 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:42:10 - ERROR - iptables command failed: sudo iptables -A PY_FIREWALL_CLI -p tcp -s 10.2.0.17 --dport 22 -j DROP
+Error: sudo: iptables: command not found
+2025-10-26 20:42:10 - INFO - Applied 0 BLOCK rules to iptables chain PY_FIREWALL_CLI.
+2025-10-26 20:42:10 - INFO - Engine started sniffing with 5 rules.
+2025-10-26 20:47:53 - INFO - Firewall shutdown sequence initiated.
+2025-10-26 20:47:53 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:47:53 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:47:57 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:47:57 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:47:57 - INFO - Firewall stopped and rules flushed manually via 'stop' command.
+2025-10-26 20:49:50 - INFO - Firewall starting up.
+2025-10-26 20:49:50 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 20:49:50 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 20:49:50 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 20:49:50 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 20:49:50 - INFO - Setting up iptables chain: PY_FIREWALL_CLI
+2025-10-26 20:49:50 - INFO - iptables command successful: sudo iptables -N PY_FIREWALL_CLI
+2025-10-26 20:49:50 - INFO - iptables command successful: sudo iptables -I INPUT 1 -j PY_FIREWALL_CLI
+2025-10-26 20:49:50 - INFO - Inserted jump rule to PY_FIREWALL_CLI in INPUT chain.
+2025-10-26 20:49:50 - INFO - iptables command successful: sudo iptables -A PY_FIREWALL_CLI -s 192.168.1.101 -j DROP
+2025-10-26 20:49:50 - INFO - iptables command successful: sudo iptables -A PY_FIREWALL_CLI -p tcp --dport 22 -j DROP
+2025-10-26 20:49:50 - INFO - Applied 2 BLOCK rules to iptables chain PY_FIREWALL_CLI.
+2025-10-26 20:49:50 - INFO - Engine started sniffing with 5 rules.
+2025-10-26 21:01:39 - INFO - Firewall shutdown sequence initiated.
+2025-10-26 21:01:39 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 21:01:39 - INFO - iptables command successful: sudo iptables -D INPUT -j PY_FIREWALL_CLI
+2025-10-26 21:01:39 - INFO - iptables command successful: sudo iptables -F PY_FIREWALL_CLI
+2025-10-26 21:01:39 - INFO - iptables command successful: sudo iptables -X PY_FIREWALL_CLI
+2025-10-26 21:01:45 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 21:01:45 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 21:01:45 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:01:46 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:01:46 - INFO - Firewall stopped and rules flushed manually via 'stop' command.
+2025-10-26 21:01:50 - INFO - Firewall starting up.
+2025-10-26 21:01:50 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 21:01:50 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 21:01:50 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:01:50 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:01:50 - INFO - Setting up iptables chain: PY_FIREWALL_CLI
+2025-10-26 21:01:50 - INFO - iptables command successful: sudo iptables -N PY_FIREWALL_CLI
+2025-10-26 21:01:50 - INFO - iptables command successful: sudo iptables -I INPUT 1 -j PY_FIREWALL_CLI
+2025-10-26 21:01:50 - INFO - Inserted jump rule to PY_FIREWALL_CLI in INPUT chain.
+2025-10-26 21:01:50 - INFO - iptables command successful: sudo iptables -A PY_FIREWALL_CLI -s 192.168.1.101 -j DROP
+2025-10-26 21:01:50 - INFO - iptables command successful: sudo iptables -A PY_FIREWALL_CLI -p tcp --dport 22 -j DROP
+2025-10-26 21:01:50 - INFO - Applied 2 BLOCK rules to iptables chain PY_FIREWALL_CLI.
+2025-10-26 21:01:50 - INFO - Engine started sniffing with 5 rules.
+2025-10-26 21:03:47 - INFO - Firewall shutdown sequence initiated.
+2025-10-26 21:03:47 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 21:03:47 - INFO - iptables command successful: sudo iptables -D INPUT -j PY_FIREWALL_CLI
+2025-10-26 21:03:47 - INFO - iptables command successful: sudo iptables -F PY_FIREWALL_CLI
+2025-10-26 21:03:47 - INFO - iptables command successful: sudo iptables -X PY_FIREWALL_CLI
+2025-10-26 21:03:49 - WARNING - Flushing firewall rules and chain: PY_FIREWALL_CLI
+2025-10-26 21:03:50 - INFO - Jump rule to PY_FIREWALL_CLI not found in INPUT chain. Skipping deletion.
+2025-10-26 21:03:50 - ERROR - iptables command failed: sudo iptables -F PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:03:50 - ERROR - iptables command failed: sudo iptables -X PY_FIREWALL_CLI
+Error: iptables: No chain/target/match by that name.
+2025-10-26 21:03:50 - INFO - Firewall stopped and rules flushed manually via 'stop' command.
